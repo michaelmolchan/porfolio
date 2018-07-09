@@ -1,0 +1,5 @@
+[![Michael Molchan Logo Logo](https://i.imgur.com/7iaB7CG.png)]
+
+# Michael Molchan Portfolio
+
+My name is Michael Molchan and I am currently working toward a career as a front-end web developer. With 3+ years of experience working as a lead web marketer at a fast-paced advertising agency, I have developed a broad range of digital marketing and design skills. As the go-to member of the team responsible for delivering all web marketing strategies, I quickly fell in love with UX/UI Design and front end development because it allowed me to apply my creativity and design skills to our marketing campaigns. Eager to learn more, I decided to enroll in an immersive Web Development program at General Assembly, so that I could expand upon my knowledge of web development and build a comprehensive portfolio demonstrating my skills. Outside of marketing and web development, my passions include graphic design, photography and video production. As an aspiring web developer, I am confident that I can meet and exceed the expectations of any opportunity, leveraging my creative and technical experience.
