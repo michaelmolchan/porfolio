@@ -1,4 +1,4 @@
-[![Michael Molchan Logo Logo](https://i.imgur.com/7iaB7CG.png)]
+![Michael Molchan Logo Logo](https://i.imgur.com/7iaB7CG.png)
 
 # Michael Molchan Portfolio
 
