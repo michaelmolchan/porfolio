@@ -271,9 +271,10 @@ footer {
 }
 
 .overlay-menu {
-  background: lightblue;
+  background: #3e474e;
   color: rgb(13, 26, 38);
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -295,13 +296,16 @@ footer {
 
 .overlay-menu li a {
   display: block;
-  font-size: 1.8em;
+  font-size: 2.2em;
   letter-spacing: 4px;
 
   /* opacity: 0; */
   padding: 10px 0;
-  text-align: right;
+  text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'BenchNine', sans-serif;
+  color: white;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 
@@ -311,7 +315,7 @@ footer {
 
 .overlay-menu li a:hover,
 .overlay-menu li a:active {
-  color: rgb(28, 121, 184);
+  color: #2dadd0;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
