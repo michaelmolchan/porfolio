@@ -1,41 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
     <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Michael Molchan | Portfolio</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <link rel="stylesheet" href="assets/styles/styles.css">
-      <script src="assets/scripts/index.js"></script>
+      <link rel="icon" href="assets/images/m_logo_favicon.png" type="image/x-icon" />
       <!-- Do not add `link` tags-->
-      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+      <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
 
       <!-- Do not add `script` tags-->
-      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
-      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+      <!-- <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script> -->
     </head>
     <body>
       <!-- <div class="container"> -->
         <header>
           <div class="nav-container">
             <div class="nav-logo">
-              <img class="m_logo" alt="Michael Molchan" title="Michael Molchan" src="assets/images/m_logo.png">
+              <a href="#home"><img class="m_logo" alt="Michael Molchan" title="Michael Molchan" src="assets/images/m_logo.png"></a>
             </div>
-            <div class="nav-bar-toggle">
+            <!-- <div class="nav-bar-toggle">
               <i class="fas fa-bars"></i>
-            </div>
+            </div> -->
             <nav>
               <ul>
-                <li><a href="#">Web Dev / Design</a></li>
-                <li><a href="#">Photography</a></li>
                 <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Work</a></li>
                 <li><a href="#">Contact</a></li>
               </ul>
             </nav>
+
+            <!-- MOBILE MENU -->
+
+            <div class="menuIcon">
+              <span class="icon icon-bars"></span>
+              <!-- <span class="icon icon-bars overlay"></span> -->
+            </div>
+
+            <div class="overlay-menu">
+              <ul id="menu">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+
           </div>
         </header>
-        <div class="intro">
-          Hey, My name is Michael Molchan!
+        <div class="about-me">
+          <div class="row">
+            <div class="column-4">
+              <img class="profile-img" src="https://avatars1.githubusercontent.com/u/34256915?s=460&v=4">
+            </div>
+            <div class="column-8">
+              <div class="about-me-content">
+                <h1>About</h1>
+                <h3>My name is Michael Molchan and I am currently working toward a career as a front-end web developer. With 3+ years of experience working as a lead web marketer at a fast-paced advertising agency, I have developed a broad range of digital marketing and design skills. As the go-to member of the team responsible for delivering all web marketing strategies, I quickly fell in love with UX/UI Design and front end development because it allowed me to apply my creativity and design skills to our marketing campaigns.</h3>
+                <h3>Eager to learn more, I decided to enroll in an immersive Web Development program at General Assembly, so that I could expand upon my knowledge of web development and build a comprehensive portfolio demonstrating my skills. Outside of marketing and web development, my passions include graphic design, photography and video production. As an aspiring web developer, I am confident that I can meet and exceed the expectations of any opportunity, leveraging my creative and technical experience</h3>
+            </div>
+          </div>
         </div>
+        <div class="skills">
+          <div class="content">
+            <h1>Skills</h1>
+            <h2>HTML5</h2>
+            <h2>CSS3 / SASS</h2>
+            <h2>JavaScript</h2>
+            <h2>jQuery</h2>
+            <h2>Handlebars</h2>
+            <h2>Ruby / Rails</h2>
+            <h2>Git / Github</h2>
+            <h2>Bootstrap</h2>
+            <h2>Wordpress</h2>
+            <h2>Illustrator</h2>
+            <h2>Premiere</h2>
+            <h2>After Effects</h2>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="content">
+            <h1>Projects</h1>
+            <h2>Tic Tac Toe</h2>
+            <h3><a href="https://michaelmolchan.github.io/molchan-tic-tac-toe-game-client/" target="_blank">Live Site</a></h3>
+            <h3><a href="https://github.com/michaelmolchan/molchan-tic-tac-toe-game-client" target="_blank">Repository</a></h3>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="content">
+            <h1>Contact</h1>
+            <h3><a href="mailto:mmolchan91@gmail.com">mmolchan91@gmail.com</a></h3>
+            <h3><a href="assets/pdfs/resume.pdf" target="_blank">Resume</a></h3>
+            <h3><a href="https://github.com/michaelmolchan/" target="_blank">Github</a></h3>
+            <h3><a href="https://www.linkedin.com/in/michael-molchan/" target="_blank">LinkedIn</a></h3>
+          </div>
+        </div>
+        <footer>
+        </footer>
       <!-- </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="assets/scripts/index.js"></script>
     </body>
 </html>

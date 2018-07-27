@@ -1,3 +1,4 @@
+
 $(() => {
   let menuIcon = document.querySelector('.menuIcon');
   let nav = document.querySelector('.overlay-menu');
@@ -10,10 +11,8 @@ $(() => {
           nav.style.transform = 'translateX(-100%)';
           nav.style.transition = 'transform 0.2s ease-out';
       }
-  });
+  })
 
-
-  // Toggle Menu Icon ========================================
   let toggleIcon = document.querySelector('.menuIcon');
 
   toggleIcon.addEventListener('click', () => {
@@ -22,5 +21,5 @@ $(() => {
       } else {
           toggleIcon.className = 'menuIcon';
       }
-  });
+  })
 })
