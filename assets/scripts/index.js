@@ -22,4 +22,34 @@ $(() => {
           toggleIcon.className = 'menuIcon';
       }
   })
+
+// Scroll to Skills section
+  $("#about").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".about").offset().top - 70
+        },
+          'slow');
+  });
+
+  $("#skills").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".skills").offset().top - 70
+        },
+          'slow');
+  });
+
+  $("#work").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".projects").offset().top - 70
+        },
+          'slow');
+  });
+
+  $("#contact").click(function() {
+      $('html,body').animate({
+          scrollTop: $(".contact").offset().top - 70
+        },
+          'slow');
+  });
+
 })

@@ -67,7 +67,7 @@ nav a:hover {
   color: #2dadd0;
 }
 
-.about-me {
+.about {
   background-color: #2dadd0;
   /* height: 100vh; */
   font-family: 'BenchNine', sans-serif;
@@ -77,7 +77,7 @@ nav a:hover {
   /* padding: 10px 20px 25px; */
 }
 
-.about-me .row {
+.about .row {
   background-color: white;
   padding: 10px 20px 25px;
   margin: 0 auto;
@@ -184,7 +184,7 @@ nav a:hover {
 
 footer {
   background-color: #3e474e;
-  height: 85px;
+  height: 60px;
 }
 
 @media (max-width: 760px) {
