@@ -71,6 +71,26 @@ nav a:hover {
   color: #2dadd0;
 }
 
+nav button {
+  color: #fff;
+  background-color: #2dadd0;
+  border: none;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-left: 40px;
+  margin-top: 12px;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+nav button:hover {
+  background-color: #157a95;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+}
+
 .intro {
   background-image: url('https://i.imgur.com/IFlUFbm.jpg');
   background-size: cover;
@@ -127,16 +147,15 @@ nav a:hover {
 }
 
 .about {
-  background-color: #fff;
+  background-color: #2dadd0;
   /* height: 100vh; */
-  font-family: 'BenchNine', sans-serif;
   height: auto;
   margin: 0 auto;
   /* padding: 10px 20px 25px; */
 }
 
 .about .row {
-  background-color: white;
+  background-color: #2dadd0;
   padding: 10px 20px 25px;
   margin: 0 auto;
   width: 80%;
@@ -158,7 +177,10 @@ nav a:hover {
 
 .about-me-content {
   padding: 0 40px 0 25px;
+  font-family: 'BenchNine', sans-serif;
   text-align: justify;
+  color: white;
+  font-weight: normal;
 }
 
 .row:after {
@@ -175,30 +197,71 @@ nav a:hover {
   display: block;
 }
 
-.skills {
-  background-color: #49c8ea;
+.parallax {
   font-family: 'BenchNine', sans-serif;
   height: auto;
+
+  /* padding: 10px 20px 25px; */
+
+  /* The image used */
+  background-image: url('https://i.imgur.com/IFlUFbm.jpg');
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.technical-skills {
+  background-color: white;
+  font-family: 'BenchNine', sans-serif;
+  height: auto;
+
   /* padding: 10px 20px 25px; */
 }
 
-.skills h1 {
-  font-size: 55px;
-  line-height: 45px;
+.technical-skills h1 {
+  font-size: 70px;
+  line-height: 55px;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 20px 85px;
+}
+
+.skills .skill {
+  flex: 1 0 25%;
+  box-sizing: border-box;
+  background: white;
+  color: #171e42;
+  padding: 10px;
 }
 
 .skills .content {
-  background-color: white;
+  color: white;
   padding: 10px 20px 25px;
   margin: 0 auto;
   width: 80%;
   text-align: center;
 }
 
+.skills-logo {
+  width: 130px;
+}
+
 .projects {
   background-color: #2dadd0;
   font-family: 'BenchNine', sans-serif;
   height: auto;
+
   /* padding: 10px 20px 25px; */
 }
 
@@ -221,15 +284,24 @@ nav a:hover {
 }
 
 .contact {
-  background-color: #49c8ea;
+  background-color: white;
   font-family: 'BenchNine', sans-serif;
   height: auto;
+
   /* padding: 10px 20px 25px; */
 }
 
 .contact h1 {
-  font-size: 55px;
-  line-height: 45px;
+  font-size: 70px;
+  line-height: 55px;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact-icon {
+  width: 75px;
 }
 
 .contact .content {
@@ -240,9 +312,14 @@ nav a:hover {
   text-align: center;
 }
 
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+
 footer {
-  background-color: #3e474e;
-  height: 60px;
+  background-color: #232d30;
+  height: 40px;
 }
 
 @media (max-width: 760px) {
