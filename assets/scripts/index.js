@@ -33,7 +33,7 @@ $(() => {
 
   $("#skills").click(function() {
       $('html,body').animate({
-          scrollTop: $(".skills").offset().top - 70
+          scrollTop: $(".technical-skills").offset().top - 70
         },
           'slow');
   });
