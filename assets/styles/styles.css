@@ -13,6 +13,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 
   /* box shadow */
   -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
@@ -314,15 +315,53 @@ nav button:hover {
 
 .projects .row {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 0 4px;
+  margin: 0 70px;
 }
 
 /* Create four equal columns that sits next to each other */
 .projects .column {
-  flex: 24%;
-  max-width: 25%;
-  padding: 0 4px;
+  flex: 46%;
+  max-width: 50%;
+  padding: 15px 20px;
+}
+
+.projects .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  transition: .3s ease;
+}
+
+.projects .column img:hover {
+  -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px);
+  z-index: -1;
+}
+
+.projects .buttons {
+  text-align: center;
+}
+
+.projects button {
+  width: 150px;
+  color: #fff;
+  background-color: #2dadd0;
+  border: none;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 20px;
+  padding: 5px 15px 5px 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.projects button:hover {
+  background-color: #157a95;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
 }
 
 .projects h1 {
@@ -339,15 +378,11 @@ nav button:hover {
   line-height: 25px;
 }
 
-.projects .column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-
 .contact {
   background-color: white;
   font-family: 'BenchNine', sans-serif;
   height: auto;
+  padding-bottom: 45px;
 
   /* padding: 10px 20px 25px; */
 }
@@ -438,18 +473,18 @@ footer {
 /* PROJECTS SECTION - makes a two column-layout instead of four columns */
 @media (max-width: 800px) {
   .projects .column {
-    flex: 48%;
-    max-width: 50%;
-  }
-}
-
-/* PROJECTS SECTION - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .projects .column {
     flex: 100%;
     max-width: 100%;
   }
 }
+
+/* PROJECTS SECTION - makes the two columns stack on top of each other instead of next to each other */
+/* @media (max-width: 600px) {
+  .projects .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+} */
 
 /* NAV BAR */
 
