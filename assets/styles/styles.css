@@ -137,6 +137,36 @@ nav button:hover {
   height: auto;
 }
 
+.divider {
+  width: 100%;
+}
+
+.divider .col {
+  width: 20%;
+  height: 6px;
+  float: left;
+}
+
+.dark-blue {
+  background-color: #2554DD;
+}
+
+.md-dark-blue {
+  background-color: #268BE7;
+}
+
+.blue {
+  background-color: #2dadd0;
+}
+
+.md-light-blue {
+  background-color: #26E7DD;
+}
+
+.light-blue {
+  background-color: #25DD9F;
+}
+
 .scroll {
   animation-name: scroll;
   animation-duration: 1.5s;
@@ -147,18 +177,32 @@ nav button:hover {
 }
 
 .about {
-  background-color: #2dadd0;
+  background-color: #232d30;
   /* height: 100vh; */
   height: auto;
   margin: 0 auto;
+  clear: left;
   /* padding: 10px 20px 25px; */
 }
 
 .about .row {
-  background-color: #2dadd0;
+  background-color: #232d30;
   padding: 10px 20px 25px;
   margin: 0 auto;
   width: 80%;
+}
+
+.about h1 {
+  font-size: 55px;
+  line-height: 50px;
+  font-weight: normal;
+  color: white;
+  padding-top: 20px;
+  letter-spacing: 1px;
+}
+
+.blue-text {
+  color: #2dadd0;
 }
 
 .column-4 {
@@ -190,11 +234,14 @@ nav button:hover {
 }
 
 .profile-img {
-  max-width: 275px;
+  max-width: 250px;
   margin-left: auto;
+  border-radius: 50%;
   margin-right: auto;
   margin-top: 40px;
   display: block;
+  border: 1px solid #4f5c60;
+  padding: 10px;
 }
 
 .parallax {
@@ -258,29 +305,43 @@ nav button:hover {
 }
 
 .projects {
-  background-color: #2dadd0;
+  background-color: white;
   font-family: 'BenchNine', sans-serif;
   height: auto;
 
   /* padding: 10px 20px 25px; */
 }
 
-.projects .content {
-  background-color: white;
-  padding: 10px 20px 25px;
-  margin: 0 auto;
-  width: 80%;
-  text-align: center;
+.projects .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.projects .column {
+  flex: 24%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
 .projects h1 {
-  font-size: 55px;
-  line-height: 45px;
+  font-size: 70px;
+  line-height: 55px;
+  font-weight: normal;
+  color: black;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .projects h2 {
   font-size: 35px;
   line-height: 25px;
+}
+
+.projects .column img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 .contact {
@@ -321,6 +382,76 @@ footer {
   background-color: #232d30;
   height: 40px;
 }
+
+.overlay-menu {
+  background: #232d30;
+  color: rgb(13, 26, 38);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 15px;
+  transform: translateX(-100%);
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+}
+
+.overlay-menu ul,
+.overlay-menu li {
+  display: block;
+  position: relative;
+}
+
+.overlay-menu li a {
+  display: block;
+  font-size: 2.2em;
+  letter-spacing: 4px;
+
+  /* opacity: 0; */
+  padding: 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'BenchNine', sans-serif;
+  color: white;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+
+  /* -webkit-transition: 0.2s opacity 0.2s ease-out;
+  transition: 0.2s opacity 0.2s ease-out; */
+}
+
+.overlay-menu li a:hover,
+.overlay-menu li a:active {
+  color: #2dadd0;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+/* MEDIA QUERIES */
+
+/* PROJECTS SECTION - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .projects .column {
+    flex: 48%;
+    max-width: 50%;
+  }
+}
+
+/* PROJECTS SECTION - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .projects .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* NAV BAR */
 
 @media (max-width: 760px) {
   nav ul {
@@ -403,56 +534,6 @@ footer {
     transition-delay: 0.1s;
     transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-}
-
-.overlay-menu {
-  background: #3e474e;
-  color: rgb(13, 26, 38);
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 15px;
-  transform: translateX(-100%);
-  width: 100vw;
-  height: 100vh;
-  -webkit-transition: transform 0.2s ease-out;
-  transition: transform 0.2s ease-out;
-}
-
-.overlay-menu ul,
-.overlay-menu li {
-  display: block;
-  position: relative;
-}
-
-.overlay-menu li a {
-  display: block;
-  font-size: 2.2em;
-  letter-spacing: 4px;
-
-  /* opacity: 0; */
-  padding: 10px 0;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: 'BenchNine', sans-serif;
-  color: white;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-
-  /* -webkit-transition: 0.2s opacity 0.2s ease-out;
-  transition: 0.2s opacity 0.2s ease-out; */
-}
-
-.overlay-menu li a:hover,
-.overlay-menu li a:active {
-  color: #2dadd0;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
 }
 
 /* ANIMATION KEY FRAMES */
