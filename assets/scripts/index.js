@@ -23,33 +23,13 @@ $(() => {
       }
   })
 
-// Scroll to Skills section
-  $("#about").click(function() {
-      $('html,body').animate({
-          scrollTop: $(".about").offset().top - 70
-        },
-          'slow');
-  });
+// jQuery Smooth Scroll Effect
 
-  $("#skills").click(function() {
-      $('html,body').animate({
-          scrollTop: $(".technical-skills").offset().top - 70
-        },
-          'slow');
-  });
-
-  $("#work").click(function() {
-      $('html,body').animate({
-          scrollTop: $(".projects").offset().top - 70
-        },
-          'slow');
-  });
-
-  $("#contact").click(function() {
-      $('html,body').animate({
-          scrollTop: $(".contact").offset().top - 70
-        },
-          'slow');
+  $('a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top - 90
+      }, 900);
+      return false;
   });
 
 })
