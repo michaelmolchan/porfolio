@@ -193,15 +193,6 @@ nav button:hover {
   width: 80%;
 }
 
-.about h1 {
-  font-size: 55px;
-  line-height: 50px;
-  font-weight: normal;
-  color: white;
-  padding-top: 20px;
-  letter-spacing: 1px;
-}
-
 .blue-text {
   color: #2dadd0;
 }
@@ -221,11 +212,33 @@ nav button:hover {
 }
 
 .about-me-content {
-  padding: 0 40px 0 25px;
+  padding: 0 40px 20px 25px;
   font-family: 'BenchNine', sans-serif;
   text-align: justify;
   color: white;
   font-weight: normal;
+}
+
+.about-me-content a {
+  text-decoration: none;
+  color: #2dadd0;
+}
+
+.about h1 {
+  font-size: 55px;
+  line-height: 50px;
+  font-weight: normal;
+  color: white;
+  padding-top: 20px;
+  letter-spacing: 1px;
+}
+
+.about h3 {
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: normal;
+  color: white;
+  letter-spacing: 1px;
 }
 
 .row:after {
@@ -239,7 +252,7 @@ nav button:hover {
   margin-left: auto;
   border-radius: 50%;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 60px;
   display: block;
   border: 1px solid #4f5c60;
   padding: 10px;
