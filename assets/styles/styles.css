@@ -84,7 +84,7 @@ nav button {
   letter-spacing: 2px;
   margin-left: 40px;
   margin-top: 12px;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px 7px 15px;
   cursor: pointer;
   transition: 0.4s;
 }
@@ -96,7 +96,7 @@ nav button:hover {
 }
 
 .intro {
-  background-image: url('https://i.imgur.com/IFlUFbm.jpg');
+  background-image: url("../images/code-background.jpg");
   background-size: cover;
   background-attachment: fixed;
   height: 70vh;
@@ -370,15 +370,15 @@ nav button:hover {
   font-weight: bold;
   letter-spacing: 2px;
   margin: 20px;
-  padding: 5px 15px 5px 15px;
+  padding: 5px 15px 7px 15px;
   cursor: pointer;
   transition: 0.4s;
 }
 
 .projects button:hover {
   background-color: #157a95;
-  -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+  /* -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0 8px 1px rgba(0, 0, 0, 0.5); */
 }
 
 .projects h1 {
