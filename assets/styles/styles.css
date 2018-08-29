@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
-@import url('https://fonts.googleapis.com/css?family=Bangers|BenchNine');
+@import url('https://fonts.googleapis.com/css?family=Bangers|Source Sans Pro');
 @import url('https://fonts.googleapis.com/css?family=Gaegu:700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 
 body {
   margin: 0;
@@ -42,7 +43,7 @@ header::after {
 
 nav {
   float: right;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 nav ul {
@@ -64,7 +65,8 @@ nav a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: bold;
   transition: 0.4s;
 }
 
@@ -76,8 +78,9 @@ nav button {
   color: #fff;
   background-color: #2dadd0;
   border: none;
-  font-family: 'BenchNine', sans-serif;
-  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
   letter-spacing: 2px;
   margin-left: 40px;
   margin-top: 12px;
@@ -97,7 +100,7 @@ nav button:hover {
   background-size: cover;
   background-attachment: fixed;
   height: 70vh;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   padding-top: 200px;
   margin: 0 auto;
 
@@ -112,15 +115,15 @@ nav button:hover {
 
 .intro h1 {
   color: white;
-  font-size: 70px;
-  font-weight: normal;
+  font-size: 60px;
+  font-weight: bold;
   text-align: center;
-  line-height: 55px;
+  line-height: 50px;
 }
 
 .intro h3 {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: normal;
   text-align: center;
   line-height: 30px;
@@ -213,7 +216,7 @@ nav button:hover {
 
 .about-me-content {
   padding: 0 40px 20px 25px;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   text-align: justify;
   color: white;
   font-weight: normal;
@@ -225,16 +228,16 @@ nav button:hover {
 }
 
 .about h1 {
-  font-size: 55px;
-  line-height: 50px;
-  font-weight: normal;
+  font-size: 38px;
+  line-height: 30px;
+  font-weight: bold;
   color: white;
   padding-top: 20px;
   letter-spacing: 1px;
 }
 
 .about h3 {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 25px;
   font-weight: normal;
   color: white;
@@ -252,14 +255,14 @@ nav button:hover {
   margin-left: auto;
   border-radius: 50%;
   margin-right: auto;
-  margin-top: 60px;
+  margin-top: 45px;
   display: block;
   border: 1px solid #4f5c60;
   padding: 10px;
 }
 
 .parallax {
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   height: auto;
 
   /* padding: 10px 20px 25px; */
@@ -276,16 +279,16 @@ nav button:hover {
 
 .technical-skills {
   background-color: white;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   height: auto;
 
   /* padding: 10px 20px 25px; */
 }
 
 .technical-skills h1 {
-  font-size: 70px;
+  font-size: 55px;
   line-height: 55px;
-  font-weight: normal;
+  font-weight: bold;
   color: black;
   text-align: center;
   padding-top: 20px;
@@ -320,7 +323,7 @@ nav button:hover {
 
 .projects {
   background-color: white;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   height: auto;
 
   /* padding: 10px 20px 25px; */
@@ -358,12 +361,13 @@ nav button:hover {
 }
 
 .projects button {
-  width: 150px;
+  width: 130px;
   color: #fff;
   background-color: #2dadd0;
   border: none;
-  font-family: 'BenchNine', sans-serif;
-  font-size: 24px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
   letter-spacing: 2px;
   margin: 20px;
   padding: 5px 15px 5px 15px;
@@ -378,9 +382,9 @@ nav button:hover {
 }
 
 .projects h1 {
-  font-size: 70px;
+  font-size: 55px;
   line-height: 55px;
-  font-weight: normal;
+  font-weight: bold;
   color: black;
   text-align: center;
   padding-top: 20px;
@@ -393,7 +397,7 @@ nav button:hover {
 
 .contact {
   background-color: #2dadd0;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   height: auto;
   padding-bottom: 45px;
 
@@ -401,9 +405,9 @@ nav button:hover {
 }
 
 .contact h1 {
-  font-size: 70px;
+  font-size: 55px;
   line-height: 55px;
-  font-weight: normal;
+  font-weight: bold;
   color: white;
   text-align: center;
   padding-top: 45px;
@@ -411,6 +415,7 @@ nav button:hover {
 
 .contact-icon {
   width: 75px;
+  padding: 20px;
 }
 
 .contact-icons {
@@ -424,14 +429,13 @@ nav button:hover {
   flex: 1 0 25%;
   box-sizing: border-box;
   background: #2dadd0;
-  color: #171e42;
   padding: 10px;
 }
 
 .contact a {
   text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 footer {
@@ -473,7 +477,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: 'BenchNine', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: white;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
